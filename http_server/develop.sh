@@ -10,7 +10,7 @@ docker create \
 --rm \
 --name=http_server \
 --publish-all \
---mount type=bind,source="/home/stivenramireza/Codes/Courses/docker-local-environments/http_server/src",target=/home/http_server_user/src \
+--mount type=bind,source="${pwd}/src",target=/home/http_server_user/src \
 --workdir /home/http_server_user/src \
 http_server:0.1
 
